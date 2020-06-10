@@ -30,6 +30,7 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnTesteInsercao = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,10 +45,20 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(633, 64);
+            this.dateTimePicker1.Location = new System.Drawing.Point(633, 66);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(226, 20);
             this.dateTimePicker1.TabIndex = 1;
+            // 
+            // btnTesteInsercao
+            // 
+            this.btnTesteInsercao.Location = new System.Drawing.Point(37, 12);
+            this.btnTesteInsercao.Name = "btnTesteInsercao";
+            this.btnTesteInsercao.Size = new System.Drawing.Size(194, 55);
+            this.btnTesteInsercao.TabIndex = 2;
+            this.btnTesteInsercao.Text = "Testa Inserindo Venda";
+            this.btnTesteInsercao.UseVisualStyleBackColor = true;
+            this.btnTesteInsercao.Click += new System.EventHandler(this.btnTesteInsercao_Click);
             // 
             // FormVendas
             // 
@@ -55,6 +66,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
+            this.Controls.Add(this.btnTesteInsercao);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormVendas";
@@ -68,5 +80,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnTesteInsercao;
     }
 }
