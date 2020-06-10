@@ -166,11 +166,11 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormVendedores());
-<<<<<<< HEAD
+
             lblTitleChildForm.Text = "VENDEDORES";
-=======
-            lblTitleChildForm.Text = "VENDEDORES--66";
->>>>>>> f804c457146bd9a17d586fd5d41d885c1261e32c
+
+            lblTitleChildForm.Text = "VENDEDORES";
+
         }
 
         private void btnFinancas_Click(object sender, EventArgs e)
