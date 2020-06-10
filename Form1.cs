@@ -173,7 +173,7 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new FormFinancas());
-            lblTitleChildForm.Text = "FINANÇAS";
+            lblTitleChildForm.Text = "FINANÇAS001";
         }
 
         private void btnHome_Click(object sender, EventArgs e)
