@@ -7,7 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 using FontAwesome.Sharp;
 using WindowsFormsApp1.Forms;
 
@@ -17,12 +17,12 @@ namespace WindowsFormsApp1
     {
         //Campos
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        private Panel leftBorderBtn;      
         private Form currentChildForm;
         public Form1()
         {
             InitializeComponent();
-            leftBorderBtn = new Panel();
+            leftBorderBtn = new Panel();       
             leftBorderBtn.Size = new Size(5, 36);
             panel1.Controls.Add(leftBorderBtn);
             //Form1
@@ -143,7 +143,7 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormDashboard());
-            lblTitleChildForm.Text = "DASHBOARD";
+            lblTitleChildForm.Text = "DASHBOARD"; 
         }
 
         private void btnStorage_Click(object sender, EventArgs e)
