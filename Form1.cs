@@ -15,6 +15,8 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+
+        //campos lol testando
         //Campos
         private IconButton currentBtn;
         private Panel leftBorderBtn;      
@@ -143,7 +145,7 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormDashboard());
-            lblTitleChildForm.Text = "DASHBOARD"; 
+            lblTitleChildForm.Text = "DASHBOARD";
         }
 
         private void btnStorage_Click(object sender, EventArgs e)
