@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        //campos lol testando
         //Campos
         private IconButton currentBtn;
         private Panel leftBorderBtn;      
@@ -165,7 +166,11 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormVendedores());
+<<<<<<< HEAD
             lblTitleChildForm.Text = "VENDEDORES";
+=======
+            lblTitleChildForm.Text = "VENDEDORES--66";
+>>>>>>> f804c457146bd9a17d586fd5d41d885c1261e32c
         }
 
         private void btnFinancas_Click(object sender, EventArgs e)
