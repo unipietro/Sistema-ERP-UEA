@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.btnFinancas = new FontAwesome.Sharp.IconButton();
             this.btnVendedores = new FontAwesome.Sharp.IconButton();
             this.btnVendas = new FontAwesome.Sharp.IconButton();
@@ -41,11 +38,14 @@
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
             this.button7 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.PictureBox();
-            this.btnAdmin = new System.Windows.Forms.Button();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,52 +65,15 @@
             this.panel1.Size = new System.Drawing.Size(236, 718);
             this.panel1.TabIndex = 0;
             // 
-            // panelTitleBar
+            // btnAdmin
             // 
-            this.panelTitleBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
-            this.panelTitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
-            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(236, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(898, 65);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(53, 18);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(57, 20);
-            this.lblTitleChildForm.TabIndex = 2;
-            this.lblTitleChildForm.Text = "HOME";
-            this.lblTitleChildForm.Click += new System.EventHandler(this.lblTitleChildForm_Click);
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(236, 65);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(898, 653);
-            this.panelDesktop.TabIndex = 2;
-            // 
-            // iconCurrentChildForm
-            // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.iconCurrentChildForm.IconSize = 36;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(11, 13);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(36, 36);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
+            this.btnAdmin.Location = new System.Drawing.Point(74, 647);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(132, 43);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnFinancas
             // 
@@ -255,15 +218,52 @@
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // btnAdmin
+            // panelTitleBar
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(74, 666);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(75, 24);
-            this.btnAdmin.TabIndex = 0;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            this.panelTitleBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.panelTitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(236, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(898, 65);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(53, 18);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(57, 20);
+            this.lblTitleChildForm.TabIndex = 2;
+            this.lblTitleChildForm.Text = "HOME";
+            this.lblTitleChildForm.Click += new System.EventHandler(this.lblTitleChildForm_Click);
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconCurrentChildForm.IconSize = 36;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(11, 13);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(36, 36);
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(236, 65);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(898, 653);
+            this.panelDesktop.TabIndex = 2;
             // 
             // Form1
             // 
@@ -279,10 +279,10 @@
             this.Text = "UEA - Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.ResumeLayout(false);
 
         }
