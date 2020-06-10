@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1.Forms
+﻿using System;
+
+namespace WindowsFormsApp1.Forms
 {
     partial class FormDashboard
     {
@@ -111,6 +113,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
