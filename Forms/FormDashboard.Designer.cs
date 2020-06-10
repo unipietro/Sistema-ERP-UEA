@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1.Forms
+﻿using System;
+
+namespace WindowsFormsApp1.Forms
 {
     partial class FormDashboard
     {
@@ -60,6 +62,7 @@
             this.chart1.Size = new System.Drawing.Size(340, 353);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // chart2
             // 
@@ -104,11 +107,22 @@
             this.Controls.Add(this.chart1);
             this.Name = "FormDashboard";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
