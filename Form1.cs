@@ -9,14 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms; 
 using FontAwesome.Sharp;
+using WindowsFormsApp1.Admin_Form;
 using WindowsFormsApp1.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-
-        //campos lol testando
         //Campos
         private IconButton currentBtn;
         private Panel leftBorderBtn;      
@@ -145,14 +144,14 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormDashboard());
-            lblTitleChildForm.Text = "DASHBOARD001111";
+            lblTitleChildForm.Text = "DASHBOARD";
         }
 
         private void btnStorage_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormEstoque());
-            lblTitleChildForm.Text = "ESTOQUE01";
+            lblTitleChildForm.Text = "ESTOQUE";
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
@@ -166,14 +165,14 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormVendedores());
-            lblTitleChildForm.Text = "VENDEDORES----";
+            lblTitleChildForm.Text = "VENDEDORES";
         }
 
         private void btnFinancas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new FormFinancas());
-            lblTitleChildForm.Text = "FINANÇAS001";
+            lblTitleChildForm.Text = "FINANÇAS";
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -202,6 +201,12 @@ namespace WindowsFormsApp1
         private void lblTitleChildForm_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Admin formADM = new Admin();
+            formADM.ShowDialog();
         }
     }
 }

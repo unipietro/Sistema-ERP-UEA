@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    static class Main
+    static class MainEX
     {
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
