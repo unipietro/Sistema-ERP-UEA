@@ -166,7 +166,7 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormVendedores());
-            lblTitleChildForm.Text = "VENDEDORES";
+            lblTitleChildForm.Text = "VENDEDORES00001";
         }
 
         private void btnFinancas_Click(object sender, EventArgs e)
