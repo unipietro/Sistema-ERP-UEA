@@ -152,7 +152,7 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormEstoque());
-            lblTitleChildForm.Text = "ESTOQUE";
+            lblTitleChildForm.Text = "ESTOQUE01";
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
