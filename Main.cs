@@ -14,14 +14,14 @@ using WindowsFormsApp1.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         //campos lol testando
         //Campos
         private IconButton currentBtn;
         private Panel leftBorderBtn;      
         private Form currentChildForm;
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();       
