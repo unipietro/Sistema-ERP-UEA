@@ -15,8 +15,6 @@ namespace WindowsFormsApp1.Admin_Form
 {
     public partial class Admin : Form
     {
-        
-
         public Admin()
         {
             InitializeComponent();

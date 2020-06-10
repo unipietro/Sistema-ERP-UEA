@@ -169,8 +169,6 @@ namespace WindowsFormsApp1
 
             lblTitleChildForm.Text = "VENDEDORES";
 
-            lblTitleChildForm.Text = "VENDEDORES";
-
         }
 
         private void btnFinancas_Click(object sender, EventArgs e)
