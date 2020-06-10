@@ -15,6 +15,8 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+
+        //campos lol testando
         //Campos
         private IconButton currentBtn;
         private Panel leftBorderBtn;
