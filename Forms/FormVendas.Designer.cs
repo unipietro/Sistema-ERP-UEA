@@ -56,7 +56,7 @@
             this.btnTesteInsercao.Name = "btnTesteInsercao";
             this.btnTesteInsercao.Size = new System.Drawing.Size(194, 55);
             this.btnTesteInsercao.TabIndex = 2;
-            this.btnTesteInsercao.Text = "Testa Inserindo Venda";
+            this.btnTesteInsercao.Text = "Testa Inserindo Vendas";
             this.btnTesteInsercao.UseVisualStyleBackColor = true;
             this.btnTesteInsercao.Click += new System.EventHandler(this.btnTesteInsercao_Click);
             // 
