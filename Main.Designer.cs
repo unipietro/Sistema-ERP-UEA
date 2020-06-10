@@ -1,4 +1,7 @@
-﻿namespace WindowsFormsApp1
+﻿using System;
+using WindowsFormsApp1.Admin_Form;
+
+namespace WindowsFormsApp1
 {
     partial class Main
     {
@@ -285,6 +288,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Admin formLogin = new Admin();
+            formLogin.ShowDialog();
         }
 
         #endregion
