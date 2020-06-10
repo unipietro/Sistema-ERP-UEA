@@ -16,10 +16,5 @@ namespace WindowsFormsApp1.Forms
         {
             InitializeComponent();
         }
-
-        private void FormDashboard_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
