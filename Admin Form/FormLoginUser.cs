@@ -27,16 +27,16 @@ namespace WindowsFormsApp1.Admin_Form
                 Admin FormAdmin = new Admin();
                 if (logintxt.Text == "admin")
                 {
-                    FormAdmin.btnCriarBD.Visible = false;
-                    FormAdmin.btnCriaTabela.Visible = false;
+                    FormAdmin.btnCriarBD.Visible = true;
+                    FormAdmin.btnCriaTabela.Visible = true;
                     FormAdmin.btnCarregaGrid.Visible = true;
                     FormAdmin.btnCarregaTabela.Visible = true;
                     FormAdmin.btnLerRegis.Visible = true;
                 }
                 else
                 {
-                    FormAdmin.btnCriarBD.Visible = true;
-                    FormAdmin.btnCriaTabela.Visible = true;
+                    FormAdmin.btnCriarBD.Visible = false;
+                    FormAdmin.btnCriaTabela.Visible = false;
                     FormAdmin.btnCarregaGrid.Visible = true;
                     FormAdmin.btnCarregaTabela.Visible = true;
                     FormAdmin.btnLerRegis.Visible = true;
@@ -50,6 +50,11 @@ namespace WindowsFormsApp1.Admin_Form
         private void btncancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void logintxt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
