@@ -148,7 +148,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 60);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Remove";
+            this.button2.Text = "Remover";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -424,7 +424,6 @@
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(271, 20);
             this.textBox23.TabIndex = 33;
-            this.textBox23.Text = "gustavobiolcatti@hotmail.com";
             // 
             // label26
             // 
