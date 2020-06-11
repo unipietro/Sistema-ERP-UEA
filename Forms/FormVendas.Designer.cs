@@ -58,7 +58,6 @@
             this.btnTesteInsercao.TabIndex = 2;
             this.btnTesteInsercao.Text = "Testa Inserindo Vendas";
             this.btnTesteInsercao.UseVisualStyleBackColor = true;
-            this.btnTesteInsercao.Click += new System.EventHandler(this.btnTesteInsercao_Click);
             // 
             // FormVendas
             // 
