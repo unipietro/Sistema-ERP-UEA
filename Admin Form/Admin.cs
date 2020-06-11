@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlServerCe;
 using System.IO;
-using Microsoft.VisualBasic;
+
 
 namespace WindowsFormsApp1.Admin_Form
 {
@@ -93,6 +94,7 @@ namespace WindowsFormsApp1.Admin_Form
             string Prompt = "Defina um nome para a tabela.";
             string Titulo = "CRIAR TABELA";
             string Resultado = Interaction.InputBox(Prompt, Titulo, "Contatos", 650, 350);
+            
             nomeTabela = Resultado;
             if(Resultado != "")
             {
