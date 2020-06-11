@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using WindowsFormsApp1.Forms;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace WindowsFormsApp1
 {
@@ -123,7 +124,6 @@ namespace WindowsFormsApp1
             return dt; //Caso haja um erro na conexão, para aqui.
         }
 
-
         public Boolean VerificarLogin(string Usuario, string Senha)
         {
             StringdeExecucao = "SELECT COUNT(login) AS Contagem FROM tabLogin WHERE login='" + Usuario + "' AND senha='" + Senha + "';";
@@ -155,8 +155,7 @@ namespace WindowsFormsApp1
                 return false;
             }
         }
-
-
+                
         private void MensagemdeErro(string MensagemdeErro)
         {
             MessageBox.Show(MensagemdeErro.ToString());

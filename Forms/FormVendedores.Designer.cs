@@ -28,20 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.FuncionariosGridView = new System.Windows.Forms.DataGridView();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.FuncionariosGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // FuncionariosGridView
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(839, 556);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.FuncionariosGridView.AllowUserToResizeColumns = false;
+            this.FuncionariosGridView.AllowUserToResizeRows = false;
+            this.FuncionariosGridView.BackgroundColor = System.Drawing.Color.White;
+            this.FuncionariosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FuncionariosGridView.GridColor = System.Drawing.Color.Black;
+            this.FuncionariosGridView.Location = new System.Drawing.Point(22, 50);
+            this.FuncionariosGridView.MultiSelect = false;
+            this.FuncionariosGridView.Name = "FuncionariosGridView";
+            this.FuncionariosGridView.RowHeadersVisible = false;
+            this.FuncionariosGridView.Size = new System.Drawing.Size(839, 533);
+            this.FuncionariosGridView.TabIndex = 0;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(22, 12);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(148, 32);
+            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.Text = "Salvar Alterações";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // FormVendedores
             // 
@@ -49,16 +63,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.FuncionariosGridView);
             this.Name = "FormVendedores";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormVendedores_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.FuncionariosGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView FuncionariosGridView;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }
