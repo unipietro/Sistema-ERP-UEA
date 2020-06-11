@@ -51,5 +51,10 @@ namespace WindowsFormsApp1.Admin_Form
         {
             this.Close();
         }
+
+        private void FormLoginUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
