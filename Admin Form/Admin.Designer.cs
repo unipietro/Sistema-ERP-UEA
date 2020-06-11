@@ -130,6 +130,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Admin";
             this.Text = "Admin";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBanco)).EndInit();
             this.ResumeLayout(false);
@@ -141,11 +142,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEncontrado;
-        private System.Windows.Forms.Button btnCriarBD;
-        private System.Windows.Forms.Button btnCriaTabela;
-        private System.Windows.Forms.Button btnCarregaTabela;
-        private System.Windows.Forms.Button btnCarregaGrid;
-        private System.Windows.Forms.Button btnLerRegis;
         private System.Windows.Forms.DataGridView dgvBanco;
+        public System.Windows.Forms.Button btnCriarBD;
+        public System.Windows.Forms.Button btnCriaTabela;
+        public System.Windows.Forms.Button btnCarregaTabela;
+        public System.Windows.Forms.Button btnCarregaGrid;
+        public System.Windows.Forms.Button btnLerRegis;
     }
 }
