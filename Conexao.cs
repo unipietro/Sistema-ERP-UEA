@@ -122,7 +122,41 @@ namespace WindowsFormsApp1
             }
             return dt; //Caso haja um erro na conexão, para aqui.
         }
-        
+
+
+        public Boolean VerificarLogin(string Usuario, string Senha)
+        {
+            StringdeExecucao = "SELECT COUNT(login) AS Contagem FROM tabLogin WHERE login='" + Usuario + "' AND senha='" + Senha + "';";
+            BuscarTabelaPadrao();
+
+            try
+            {
+                Int32 ContagemLogin = myAdapterPadrão.GetInt32("Contagem");
+                if (ContagemLogin == 1)
+                {
+                    //Retorna o Login e Senha como Verdadeiro
+                    return true;
+                }
+                else if (ContagemLogin == 0)
+                {
+                    MensagemdeErro("Usuário e/ou Senha incorretos.");
+                    //Retorna o Login e Senha como Verdadeiro
+                    return false;
+                }
+                else
+                {
+                    MensagemdeErro("Desculpe, mais ocorreu um erro pois existe mais de 1 usuário com o mesmo Login e Senha.");
+                    //Retorna o Login e Senha como Verdadeiro
+                    return false;
+                };
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+
         private void MensagemdeErro(string MensagemdeErro)
         {
             MessageBox.Show(MensagemdeErro.ToString());

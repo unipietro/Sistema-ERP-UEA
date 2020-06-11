@@ -292,8 +292,8 @@ namespace WindowsFormsApp1
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            Admin formLogin = new Admin();
-            formLogin.ShowDialog();
+            FormLoginUser formLogi = new FormLoginUser();
+            formLogi.ShowDialog();
         }
 
         #endregion
