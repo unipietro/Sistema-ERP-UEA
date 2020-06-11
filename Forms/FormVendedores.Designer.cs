@@ -40,19 +40,18 @@
             this.FuncionariosGridView.BackgroundColor = System.Drawing.Color.White;
             this.FuncionariosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FuncionariosGridView.GridColor = System.Drawing.Color.Black;
-            this.FuncionariosGridView.Location = new System.Drawing.Point(22, 50);
-            this.FuncionariosGridView.MultiSelect = false;
+            this.FuncionariosGridView.Location = new System.Drawing.Point(22, 63);
             this.FuncionariosGridView.Name = "FuncionariosGridView";
             this.FuncionariosGridView.RowHeadersVisible = false;
-            this.FuncionariosGridView.Size = new System.Drawing.Size(839, 533);
+            this.FuncionariosGridView.Size = new System.Drawing.Size(839, 520);
             this.FuncionariosGridView.TabIndex = 0;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(22, 12);
+            this.btnSalvar.Location = new System.Drawing.Point(22, 13);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(148, 32);
-            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.Size = new System.Drawing.Size(158, 44);
+            this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar Alterações";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
