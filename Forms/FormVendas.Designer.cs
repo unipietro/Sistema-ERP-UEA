@@ -30,7 +30,7 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnTesteInsercao = new System.Windows.Forms.Button();
+            this.btnNovaVenda = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,15 +50,26 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(226, 20);
             this.dateTimePicker1.TabIndex = 1;
             // 
-            // btnTesteInsercao
+            // btnNovaVenda
             // 
-            this.btnTesteInsercao.Location = new System.Drawing.Point(37, 12);
-            this.btnTesteInsercao.Name = "btnTesteInsercao";
-            this.btnTesteInsercao.Size = new System.Drawing.Size(194, 55);
-            this.btnTesteInsercao.TabIndex = 2;
-            this.btnTesteInsercao.Text = "Testa Inserindo Vendas";
-            this.btnTesteInsercao.UseVisualStyleBackColor = true;
-            this.btnTesteInsercao.Click += new System.EventHandler(this.btnTesteInsercao_Click);
+            this.btnNovaVenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
+            this.btnNovaVenda.FlatAppearance.BorderSize = 0;
+            this.btnNovaVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovaVenda.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnNovaVenda.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovaVenda.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNovaVenda.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.btnNovaVenda.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNovaVenda.IconSize = 30;
+            this.btnNovaVenda.Location = new System.Drawing.Point(25, 33);
+            this.btnNovaVenda.Name = "btnNovaVenda";
+            this.btnNovaVenda.Rotation = 0D;
+            this.btnNovaVenda.Size = new System.Drawing.Size(198, 41);
+            this.btnNovaVenda.TabIndex = 3;
+            this.btnNovaVenda.Text = "Nova Venda";
+            this.btnNovaVenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNovaVenda.UseVisualStyleBackColor = false;
+            this.btnNovaVenda.Click += new System.EventHandler(this.btnNovaVenda_Click);
             // 
             // FormVendas
             // 
@@ -66,7 +77,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
-            this.Controls.Add(this.btnTesteInsercao);
+            this.Controls.Add(this.btnNovaVenda);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormVendas";
@@ -80,6 +91,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnTesteInsercao;
+        private FontAwesome.Sharp.IconButton btnNovaVenda;
     }
 }
