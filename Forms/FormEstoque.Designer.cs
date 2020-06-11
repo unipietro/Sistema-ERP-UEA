@@ -39,21 +39,20 @@
             this.ProdutosGridView.AllowUserToResizeRows = false;
             this.ProdutosGridView.BackgroundColor = System.Drawing.Color.White;
             this.ProdutosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProdutosGridView.Enabled = false;
             this.ProdutosGridView.GridColor = System.Drawing.Color.Black;
-            this.ProdutosGridView.Location = new System.Drawing.Point(22, 50);
+            this.ProdutosGridView.Location = new System.Drawing.Point(22, 62);
             this.ProdutosGridView.MultiSelect = false;
             this.ProdutosGridView.Name = "ProdutosGridView";
             this.ProdutosGridView.RowHeadersVisible = false;
-            this.ProdutosGridView.Size = new System.Drawing.Size(841, 546);
+            this.ProdutosGridView.Size = new System.Drawing.Size(841, 534);
             this.ProdutosGridView.TabIndex = 0;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(22, 12);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(148, 32);
-            this.btnSalvar.TabIndex = 2;
+            this.btnSalvar.Size = new System.Drawing.Size(158, 44);
+            this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar Alterações";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);

@@ -45,6 +45,7 @@ namespace WindowsFormsApp1
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.btnClientes = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
@@ -54,6 +55,7 @@ namespace WindowsFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.btnAdmin);
             this.panel1.Controls.Add(this.btnFinancas);
             this.panel1.Controls.Add(this.btnVendedores);
@@ -268,7 +270,30 @@ namespace WindowsFormsApp1
             this.panelDesktop.Size = new System.Drawing.Size(898, 653);
             this.panelDesktop.TabIndex = 2;
             // 
-            // Form1
+            // btnClientes
+            // 
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClientes.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            this.btnClientes.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClientes.IconSize = 32;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(0, 370);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnClientes.Rotation = 0D;
+            this.btnClientes.Size = new System.Drawing.Size(235, 36);
+            this.btnClientes.TabIndex = 13;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,7 +303,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "UEA - Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -311,6 +336,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Button btnAdmin;
+        private FontAwesome.Sharp.IconButton btnClientes;
     }
 }
 
