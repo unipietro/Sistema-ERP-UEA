@@ -13,7 +13,7 @@ using WindowsFormsApp1.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
 
         //campos lol testando
@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         private IconButton currentBtn;
         private Panel leftBorderBtn;      
         private Form currentChildForm;
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();       
@@ -145,14 +145,14 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormDashboard());
-            lblTitleChildForm.Text = "DASHBOARD001111";
+            lblTitleChildForm.Text = "DASHBOARD";
         }
 
         private void btnStorage_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormEstoque());
-            lblTitleChildForm.Text = "ESTOQUE01";
+            lblTitleChildForm.Text = "ESTOQUE";
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
@@ -166,14 +166,14 @@ namespace WindowsFormsApp1
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormVendedores());
-            lblTitleChildForm.Text = "VENDEDORES--66";
+            lblTitleChildForm.Text = "VENDEDORES";
         }
 
         private void btnFinancas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new FormFinancas());
-            lblTitleChildForm.Text = "FINANÇAS001";
+            lblTitleChildForm.Text = "FINANÇAS";
         }
 
         private void btnHome_Click(object sender, EventArgs e)
