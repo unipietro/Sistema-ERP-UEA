@@ -28,35 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ProdutosGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ProdutosGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // ProdutosGridView
+            // dataGridView1
             // 
-            this.ProdutosGridView.AllowUserToResizeColumns = false;
-            this.ProdutosGridView.AllowUserToResizeRows = false;
-            this.ProdutosGridView.BackgroundColor = System.Drawing.Color.White;
-            this.ProdutosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProdutosGridView.Enabled = false;
-            this.ProdutosGridView.GridColor = System.Drawing.Color.Black;
-            this.ProdutosGridView.Location = new System.Drawing.Point(22, 50);
-            this.ProdutosGridView.MultiSelect = false;
-            this.ProdutosGridView.Name = "ProdutosGridView";
-            this.ProdutosGridView.RowHeadersVisible = false;
-            this.ProdutosGridView.Size = new System.Drawing.Size(841, 546);
-            this.ProdutosGridView.TabIndex = 0;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.Black;
+            this.dataGridView1.Location = new System.Drawing.Point(22, 62);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(841, 534);
+            this.dataGridView1.TabIndex = 0;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(22, 12);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(148, 32);
-            this.btnSalvar.TabIndex = 2;
+            this.btnSalvar.Size = new System.Drawing.Size(158, 44);
+            this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar Alterações";
             this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // FormEstoque
             // 
@@ -65,18 +63,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.ProdutosGridView);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "FormEstoque";
             this.Text = "Form3";
-            this.Load += new System.EventHandler(this.FormEstoque_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ProdutosGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView ProdutosGridView;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSalvar;
     }
 }
