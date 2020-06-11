@@ -81,6 +81,7 @@
             this.logintxt.Name = "logintxt";
             this.logintxt.Size = new System.Drawing.Size(179, 20);
             this.logintxt.TabIndex = 7;
+            this.logintxt.TextChanged += new System.EventHandler(this.logintxt_TextChanged);
             // 
             // label1
             // 
