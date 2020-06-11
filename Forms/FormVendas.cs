@@ -17,15 +17,6 @@ namespace WindowsFormsApp1.Forms
             InitializeComponent();
         }
 
-        private void btnTesteInsercao_Click(object sender, EventArgs e)
-        {
-
-            Conexao con = new Conexao();
-            con.StringdeExecucao = "INSERT INTO tabvendas SET datavenda=NOW(), observacoes='Teste numero 1', status='True';";
-            con.ExecultaComando(con.StringdeExecucao.ToString());
-            MessageBox.Show("Inserção realizada com sucesso.");
-        }
-
         private void btnNovaVenda_Click(object sender, EventArgs e)
         {
             Conexao con = new Conexao();
