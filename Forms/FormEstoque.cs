@@ -40,7 +40,7 @@ namespace WindowsFormsApp1.Forms
                 ProdutosGridView.Columns["Custo"].Width = 100;
                 ProdutosGridView.Columns["Venda"].Width = 100;
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show("Desculpe, mas ocorreu um erro ao buscar as informações no banco de dados.");
             }

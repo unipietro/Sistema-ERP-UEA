@@ -58,7 +58,7 @@
             // 
             // btnCriarBD
             // 
-            this.btnCriarBD.Location = new System.Drawing.Point(388, 43);
+            this.btnCriarBD.Location = new System.Drawing.Point(388, 33);
             this.btnCriarBD.Name = "btnCriarBD";
             this.btnCriarBD.Size = new System.Drawing.Size(134, 23);
             this.btnCriarBD.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // btnCriaTabela
             // 
-            this.btnCriaTabela.Location = new System.Drawing.Point(388, 72);
+            this.btnCriaTabela.Location = new System.Drawing.Point(388, 62);
             this.btnCriaTabela.Name = "btnCriaTabela";
             this.btnCriaTabela.Size = new System.Drawing.Size(134, 23);
             this.btnCriaTabela.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // btnCarregaTabela
             // 
-            this.btnCarregaTabela.Location = new System.Drawing.Point(388, 101);
+            this.btnCarregaTabela.Location = new System.Drawing.Point(388, 91);
             this.btnCarregaTabela.Name = "btnCarregaTabela";
             this.btnCarregaTabela.Size = new System.Drawing.Size(134, 23);
             this.btnCarregaTabela.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // btnCarregaGrid
             // 
-            this.btnCarregaGrid.Location = new System.Drawing.Point(388, 130);
+            this.btnCarregaGrid.Location = new System.Drawing.Point(388, 120);
             this.btnCarregaGrid.Name = "btnCarregaGrid";
             this.btnCarregaGrid.Size = new System.Drawing.Size(134, 23);
             this.btnCarregaGrid.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             // btnLerRegis
             // 
-            this.btnLerRegis.Location = new System.Drawing.Point(388, 159);
+            this.btnLerRegis.Location = new System.Drawing.Point(388, 149);
             this.btnLerRegis.Name = "btnLerRegis";
             this.btnLerRegis.Size = new System.Drawing.Size(134, 23);
             this.btnLerRegis.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 560);
+            this.ClientSize = new System.Drawing.Size(542, 560);
             this.Controls.Add(this.dgvBanco);
             this.Controls.Add(this.btnLerRegis);
             this.Controls.Add(this.btnCarregaGrid);
