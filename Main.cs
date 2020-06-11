@@ -189,6 +189,13 @@ namespace WindowsFormsApp1
             lblTitleChildForm.Text = "Home";
         }
 
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new FormClientes());
+            lblTitleChildForm.Text = "CLIENTES";
+        }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -203,5 +210,7 @@ namespace WindowsFormsApp1
         {
 
         }
+
+
     }
 }
