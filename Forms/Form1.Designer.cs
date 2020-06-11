@@ -54,14 +54,10 @@
             this.Produto = new System.Windows.Forms.TabControl();
             this.tabCliente = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -81,7 +77,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -103,6 +98,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tabProduto.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Produto.SuspendLayout();
@@ -347,11 +343,11 @@
             // 
             // tabCliente
             // 
+            this.tabCliente.Controls.Add(this.comboBox4);
             this.tabCliente.Controls.Add(this.groupBox4);
             this.tabCliente.Controls.Add(this.groupBox3);
             this.tabCliente.Controls.Add(this.button6);
             this.tabCliente.Controls.Add(this.button5);
-            this.tabCliente.Controls.Add(this.textBox13);
             this.tabCliente.Controls.Add(this.label16);
             this.tabCliente.Controls.Add(this.textBox12);
             this.tabCliente.Controls.Add(this.label15);
@@ -367,14 +363,10 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox24);
-            this.groupBox4.Controls.Add(this.label27);
             this.groupBox4.Controls.Add(this.textBox25);
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.textBox23);
             this.groupBox4.Controls.Add(this.label26);
-            this.groupBox4.Controls.Add(this.textBox22);
-            this.groupBox4.Controls.Add(this.label25);
             this.groupBox4.Controls.Add(this.textBox21);
             this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Location = new System.Drawing.Point(8, 154);
@@ -384,35 +376,18 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Contato";
             // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(134, 32);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(31, 20);
-            this.textBox24.TabIndex = 37;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(131, 16);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(34, 13);
-            this.label27.TabIndex = 36;
-            this.label27.Text = "DDD:";
-            // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(171, 32);
+            this.textBox25.Location = new System.Drawing.Point(136, 32);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(70, 20);
+            this.textBox25.Size = new System.Drawing.Size(105, 20);
             this.textBox25.TabIndex = 35;
             this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(171, 16);
+            this.label28.Location = new System.Drawing.Point(133, 16);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(52, 13);
             this.label28.TabIndex = 34;
@@ -434,35 +409,18 @@
             this.label26.TabIndex = 32;
             this.label26.Text = "E-mail:";
             // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(10, 32);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(31, 20);
-            this.textBox22.TabIndex = 3;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(7, 16);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(34, 13);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "DDD:";
-            // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(47, 32);
+            this.textBox21.Location = new System.Drawing.Point(10, 32);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(70, 20);
+            this.textBox21.Size = new System.Drawing.Size(107, 20);
             this.textBox21.TabIndex = 1;
             this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(47, 16);
+            this.label24.Location = new System.Drawing.Point(7, 16);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(42, 13);
             this.label24.TabIndex = 0;
@@ -621,13 +579,6 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Buscar";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(182, 20);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(364, 20);
-            this.textBox13.TabIndex = 5;
             // 
             // label16
             // 
@@ -826,6 +777,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Visão Geral";
             // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(182, 19);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(364, 21);
+            this.comboBox4.TabIndex = 38;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -898,14 +857,10 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -925,12 +880,12 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
