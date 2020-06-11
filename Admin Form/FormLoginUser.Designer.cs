@@ -113,7 +113,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLoginUser";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.FormLoginUser_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
