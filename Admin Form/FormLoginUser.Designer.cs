@@ -34,11 +34,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.logintxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.iconLogin = new FontAwesome.Sharp.IconPictureBox();
+            this.lblLogin = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.iconLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // btncancelar
             // 
-            this.btncancelar.Location = new System.Drawing.Point(125, 90);
+            this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancelar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btncancelar.Location = new System.Drawing.Point(292, 217);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(67, 30);
             this.btncancelar.TabIndex = 11;
@@ -48,7 +55,11 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(52, 90);
+            this.btnOk.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOk.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnOk.Location = new System.Drawing.Point(12, 217);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(67, 30);
             this.btnOk.TabIndex = 10;
@@ -58,47 +69,83 @@
             // 
             // senhatxt
             // 
-            this.senhatxt.Location = new System.Drawing.Point(13, 64);
+            this.senhatxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(140)))));
+            this.senhatxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.senhatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senhatxt.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.senhatxt.Location = new System.Drawing.Point(12, 180);
             this.senhatxt.Name = "senhatxt";
             this.senhatxt.PasswordChar = '*';
-            this.senhatxt.Size = new System.Drawing.Size(179, 20);
+            this.senhatxt.Size = new System.Drawing.Size(347, 19);
             this.senhatxt.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 50);
+            this.label2.Location = new System.Drawing.Point(9, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(65, 27);
             this.label2.TabIndex = 8;
             this.label2.Text = "Senha:";
             // 
             // logintxt
             // 
+            this.logintxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(140)))));
+            this.logintxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.logintxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.logintxt.Location = new System.Drawing.Point(13, 23);
+            this.logintxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logintxt.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.logintxt.Location = new System.Drawing.Point(12, 120);
             this.logintxt.Name = "logintxt";
-            this.logintxt.Size = new System.Drawing.Size(179, 20);
+            this.logintxt.Size = new System.Drawing.Size(347, 19);
             this.logintxt.TabIndex = 7;
             this.logintxt.TextChanged += new System.EventHandler(this.logintxt_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 9);
+            this.label1.Location = new System.Drawing.Point(9, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(58, 27);
             this.label1.TabIndex = 6;
             this.label1.Text = "Login:";
+            // 
+            // iconLogin
+            // 
+            this.iconLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.iconLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconLogin.IconChar = FontAwesome.Sharp.IconChar.SignInAlt;
+            this.iconLogin.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconLogin.IconSize = 57;
+            this.iconLogin.Location = new System.Drawing.Point(12, 21);
+            this.iconLogin.Name = "iconLogin";
+            this.iconLogin.Size = new System.Drawing.Size(60, 57);
+            this.iconLogin.TabIndex = 12;
+            this.iconLogin.TabStop = false;
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblLogin.Location = new System.Drawing.Point(78, 32);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(218, 35);
+            this.lblLogin.TabIndex = 13;
+            this.lblLogin.Text = "Entre em sua conta";
             // 
             // FormLoginUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(206, 129);
+            this.ClientSize = new System.Drawing.Size(371, 259);
+            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.iconLogin);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.senhatxt);
@@ -113,6 +160,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLoginUser";
             this.TopMost = true;
+            ((System.ComponentModel.ISupportInitialize)(this.iconLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +174,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox logintxt;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconPictureBox iconLogin;
+        private System.Windows.Forms.Label lblLogin;
     }
 }
