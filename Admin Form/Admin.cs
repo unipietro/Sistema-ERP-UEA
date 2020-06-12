@@ -97,19 +97,19 @@ namespace WindowsFormsApp1.Admin_Form
             
             nomeTabela = Resultado;
             if(Resultado != "")
-            {
-                if(Resultado.Contains(".sdf"))
-                {
-                    MessageBox.Show("Não informe a extensão .sdf no arquivo");
-                    return;
-                }
-                // conexão criada so renomear
-                SqlCeConnection cn = new SqlCeConnection(stringConexao());
-                if (cn.State == ConnectionState.Closed)
-                {
-                    cn.Open();
-                }
-
+            { 
+                    if (Resultado.Contains(".sdf"))
+                    {
+                        MessageBox.Show("Não informe a extensão .sdf no arquivo");
+                        return;
+                    }
+                    // conexão criada so renomear
+                    SqlCeConnection cn = new SqlCeConnection(stringConexao());
+                    if (cn.State == ConnectionState.Closed)
+                    {
+                        cn.Open();
+                    }
+                
                 SqlCeCommand cmd;
 
                 string sql = "CREATE TABLE " + Resultado + "("
