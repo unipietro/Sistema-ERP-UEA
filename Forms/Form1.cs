@@ -17,6 +17,9 @@ namespace WindowsFormsApp1.Forms
             InitializeComponent();
         }
 
-        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
