@@ -104,6 +104,7 @@
             this.Controls.Add(this.chart1);
             this.Name = "FormFinancas";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormFinancas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();

@@ -117,7 +117,7 @@ namespace WindowsFormsApp1.Forms
 
         private void FormDashboard_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         private void chart1_Click(object sender, EventArgs e)
