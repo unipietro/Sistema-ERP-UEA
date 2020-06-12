@@ -7,6 +7,7 @@ using System.Data;
 using WindowsFormsApp1.Forms;
 using System.Windows.Forms;
 using System.Globalization;
+using Microsoft.VisualBasic;
 
 namespace WindowsFormsApp1
 {
@@ -55,7 +56,7 @@ namespace WindowsFormsApp1
         {
             //Chamo o metodo pra abrir conexão com o Banco de Dados.
             if (AbrirCon() == false)
-            { 
+            {
                 return; //Caso haja um erro na conexão, para aqui.
             }
 
@@ -69,7 +70,7 @@ namespace WindowsFormsApp1
                 comandomysql.ExecuteNonQuery();
             }
             catch (Exception ex)
-            {                
+            {
                 MensagemdeErro("Erro ao execultar o comando no banco de dados. \n\n" + ex.ToString());
             }
             finally
@@ -86,7 +87,7 @@ namespace WindowsFormsApp1
             {
                 return; //Caso haja um erro na conexão, para aqui.
             }
-            
+
             try
             {
                 //Execulta a string no banco de dados
@@ -110,7 +111,7 @@ namespace WindowsFormsApp1
             //Chamo o metodo pra abrir conexão com o Banco de Dados.
             AbrirCon();
             try
-            {                
+            {
                 new MySqlDataAdapter(StringdeExecucao, con).Fill(dt);
             }
             catch (Exception ex)
@@ -155,10 +156,22 @@ namespace WindowsFormsApp1
                 return false;
             }
         }
-                
+
         private void MensagemdeErro(string MensagemdeErro)
         {
             MessageBox.Show(MensagemdeErro.ToString());
+        }
+
+        public DataTable RetornaDataTableparaComboBox()
+        {
+            DataTable MinhaTabelaPadrão = new DataTable();
+            MySqlDataAdapter myAdapterPadrão = new MySqlDataAdapter();
+            ExecultaComando(StringdeExecucao);
+            myAdapterPadrão.SelectCommand = comandomysql;
+            myAdapterPadrão.Fill(MinhaTabelaPadrão);
+            return MinhaTabelaPadrão;
+
+
         }
 
     }
