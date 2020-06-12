@@ -33,6 +33,7 @@ namespace WindowsFormsApp1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClientes = new FontAwesome.Sharp.IconButton();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnFinancas = new FontAwesome.Sharp.IconButton();
             this.btnVendedores = new FontAwesome.Sharp.IconButton();
@@ -42,10 +43,10 @@ namespace WindowsFormsApp1
             this.button7 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnAdminLogin = new FontAwesome.Sharp.IconButton();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnClientes = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
@@ -55,6 +56,7 @@ namespace WindowsFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.btnAdminLogin);
             this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.btnAdmin);
             this.panel1.Controls.Add(this.btnFinancas);
@@ -70,9 +72,32 @@ namespace WindowsFormsApp1
             this.panel1.Size = new System.Drawing.Size(236, 718);
             this.panel1.TabIndex = 0;
             // 
+            // btnClientes
+            // 
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClientes.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btnClientes.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClientes.IconSize = 32;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(0, 370);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnClientes.Rotation = 0D;
+            this.btnClientes.Size = new System.Drawing.Size(235, 36);
+            this.btnClientes.TabIndex = 13;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(74, 647);
+            this.btnAdmin.Location = new System.Drawing.Point(74, 572);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(132, 43);
             this.btnAdmin.TabIndex = 0;
@@ -237,6 +262,27 @@ namespace WindowsFormsApp1
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
+            // btnAdminLogin
+            // 
+            this.btnAdminLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdminLogin.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAdminLogin.FlatAppearance.BorderSize = 0;
+            this.btnAdminLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminLogin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAdminLogin.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAdminLogin.IconChar = FontAwesome.Sharp.IconChar.UserShield;
+            this.btnAdminLogin.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAdminLogin.IconSize = 20;
+            this.btnAdminLogin.Location = new System.Drawing.Point(129, 661);
+            this.btnAdminLogin.Name = "btnAdminLogin";
+            this.btnAdminLogin.Rotation = 0D;
+            this.btnAdminLogin.Size = new System.Drawing.Size(101, 34);
+            this.btnAdminLogin.TabIndex = 15;
+            this.btnAdminLogin.Text = "Entrar";
+            this.btnAdminLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdminLogin.UseVisualStyleBackColor = true;
+            // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
@@ -270,29 +316,6 @@ namespace WindowsFormsApp1
             this.panelDesktop.Size = new System.Drawing.Size(898, 653);
             this.panelDesktop.TabIndex = 2;
             // 
-            // btnClientes
-            // 
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClientes.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
-            this.btnClientes.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClientes.IconSize = 32;
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 370);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnClientes.Rotation = 0D;
-            this.btnClientes.Size = new System.Drawing.Size(235, 36);
-            this.btnClientes.TabIndex = 13;
-            this.btnClientes.Text = "CLIENTES";
-            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +344,8 @@ namespace WindowsFormsApp1
             formLogi.ShowDialog();
         }
 
+
+
         #endregion
 
         private System.Windows.Forms.Panel panel1;
@@ -337,6 +362,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Button btnAdmin;
         private FontAwesome.Sharp.IconButton btnClientes;
+        private FontAwesome.Sharp.IconButton btnAdminLogin;
     }
 }
 

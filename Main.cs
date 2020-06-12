@@ -191,7 +191,7 @@ namespace WindowsFormsApp1
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color5);
+            ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FormClientes());
             lblTitleChildForm.Text = "CLIENTES";
         }
@@ -212,5 +212,9 @@ namespace WindowsFormsApp1
         }
 
 
+        private void btnAdminLogin_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

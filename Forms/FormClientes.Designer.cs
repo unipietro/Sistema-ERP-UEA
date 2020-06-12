@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ClientesGridView = new System.Windows.Forms.DataGridView();
-            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnSave = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.ClientesGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,9 +37,9 @@
             // 
             this.ClientesGridView.AllowUserToResizeColumns = false;
             this.ClientesGridView.AllowUserToResizeRows = false;
-            this.ClientesGridView.BackgroundColor = System.Drawing.Color.White;
+            this.ClientesGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.ClientesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClientesGridView.GridColor = System.Drawing.Color.Black;
+            this.ClientesGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.ClientesGridView.Location = new System.Drawing.Point(22, 62);
             this.ClientesGridView.MultiSelect = false;
             this.ClientesGridView.Name = "ClientesGridView";
@@ -47,15 +47,25 @@
             this.ClientesGridView.Size = new System.Drawing.Size(841, 534);
             this.ClientesGridView.TabIndex = 0;
             // 
-            // btnSalvar
+            // btnSave
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(22, 12);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(158, 44);
-            this.btnSalvar.TabIndex = 1;
-            this.btnSalvar.Text = "Salvar Alterações";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSave.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btnSave.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.IconSize = 25;
+            this.btnSave.Location = new System.Drawing.Point(22, 13);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Rotation = 0D;
+            this.btnSave.Size = new System.Drawing.Size(172, 43);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Salvar Alterações";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormClientes
             // 
@@ -63,7 +73,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
-            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.ClientesGridView);
             this.Name = "FormClientes";
             this.Text = "Clientes";
@@ -76,6 +86,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView ClientesGridView;
-        private System.Windows.Forms.Button btnSalvar;
+        private FontAwesome.Sharp.IconButton btnSave;
     }
 }
