@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms; 
 using FontAwesome.Sharp;
 using WindowsFormsApp1.Forms;
+using WindowsFormsApp1.Admin_Form;
 
 namespace WindowsFormsApp1
 {
@@ -215,6 +216,12 @@ namespace WindowsFormsApp1
         private void btnAdminLogin_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnAdminLogin_Click_1(object sender, EventArgs e)
+        {
+            FormLoginUser formLogi = new FormLoginUser();
+            formLogi.ShowDialog();
         }
     }
 }
