@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.TabPage tabCliente;
             this.tabProduto = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -52,7 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Produto = new System.Windows.Forms.TabControl();
-            this.tabCliente = new System.Windows.Forms.TabPage();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -98,11 +99,11 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            tabCliente = new System.Windows.Forms.TabPage();
             this.tabProduto.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Produto.SuspendLayout();
-            this.tabCliente.SuspendLayout();
+            tabCliente.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -111,6 +112,7 @@
             // 
             // tabProduto
             // 
+            this.tabProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.tabProduto.Controls.Add(this.button3);
             this.tabProduto.Controls.Add(this.button2);
             this.tabProduto.Controls.Add(this.button1);
@@ -121,13 +123,13 @@
             this.tabProduto.Controls.Add(this.comboBox1);
             this.tabProduto.Controls.Add(this.label2);
             this.tabProduto.Controls.Add(this.label1);
+            this.tabProduto.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.tabProduto.Location = new System.Drawing.Point(4, 22);
             this.tabProduto.Name = "tabProduto";
             this.tabProduto.Padding = new System.Windows.Forms.Padding(3);
             this.tabProduto.Size = new System.Drawing.Size(556, 264);
             this.tabProduto.TabIndex = 0;
             this.tabProduto.Text = "Produto";
-            this.tabProduto.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -158,6 +160,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -170,6 +173,7 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Location = new System.Drawing.Point(9, 46);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(537, 146);
@@ -334,7 +338,7 @@
             // Produto
             // 
             this.Produto.Controls.Add(this.tabProduto);
-            this.Produto.Controls.Add(this.tabCliente);
+            this.Produto.Controls.Add(tabCliente);
             this.Produto.Location = new System.Drawing.Point(0, 0);
             this.Produto.Name = "Produto";
             this.Produto.SelectedIndex = 0;
@@ -343,23 +347,31 @@
             // 
             // tabCliente
             // 
-            this.tabCliente.Controls.Add(this.comboBox4);
-            this.tabCliente.Controls.Add(this.groupBox4);
-            this.tabCliente.Controls.Add(this.groupBox3);
-            this.tabCliente.Controls.Add(this.button6);
-            this.tabCliente.Controls.Add(this.button5);
-            this.tabCliente.Controls.Add(this.label16);
-            this.tabCliente.Controls.Add(this.textBox12);
-            this.tabCliente.Controls.Add(this.label15);
-            this.tabCliente.Controls.Add(this.comboBox3);
-            this.tabCliente.Controls.Add(this.label14);
-            this.tabCliente.Location = new System.Drawing.Point(4, 22);
-            this.tabCliente.Name = "tabCliente";
-            this.tabCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCliente.Size = new System.Drawing.Size(556, 264);
-            this.tabCliente.TabIndex = 1;
-            this.tabCliente.Text = "Cliente";
-            this.tabCliente.UseVisualStyleBackColor = true;
+            tabCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            tabCliente.Controls.Add(this.comboBox4);
+            tabCliente.Controls.Add(this.groupBox4);
+            tabCliente.Controls.Add(this.groupBox3);
+            tabCliente.Controls.Add(this.button6);
+            tabCliente.Controls.Add(this.button5);
+            tabCliente.Controls.Add(this.label16);
+            tabCliente.Controls.Add(this.textBox12);
+            tabCliente.Controls.Add(this.label15);
+            tabCliente.Controls.Add(this.comboBox3);
+            tabCliente.Controls.Add(this.label14);
+            tabCliente.Location = new System.Drawing.Point(4, 22);
+            tabCliente.Name = "tabCliente";
+            tabCliente.Padding = new System.Windows.Forms.Padding(3);
+            tabCliente.Size = new System.Drawing.Size(556, 264);
+            tabCliente.TabIndex = 1;
+            tabCliente.Text = "Cliente";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(182, 19);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(364, 21);
+            this.comboBox4.TabIndex = 38;
             // 
             // groupBox4
             // 
@@ -375,6 +387,7 @@
             this.groupBox4.TabIndex = 31;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Contato";
+            this.groupBox4.UseCompatibleTextRendering = true;
             // 
             // textBox25
             // 
@@ -626,6 +639,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.quantidade,
@@ -777,23 +791,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Visão Geral";
             // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(182, 19);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(364, 21);
-            this.comboBox4.TabIndex = 38;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(562, 645);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Produto);
+            this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabProduto.ResumeLayout(false);
@@ -801,8 +809,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Produto.ResumeLayout(false);
-            this.tabCliente.ResumeLayout(false);
-            this.tabCliente.PerformLayout();
+            tabCliente.ResumeLayout(false);
+            tabCliente.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -828,7 +836,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabPage tabCliente;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button3;
