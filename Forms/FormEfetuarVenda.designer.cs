@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.tabProduto = new System.Windows.Forms.TabPage();
+            this.descricaocmb = new System.Windows.Forms.ComboBox();
+            this.qntdtxt = new System.Windows.Forms.NumericUpDown();
+            this.custounittxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.codigotxt = new System.Windows.Forms.TextBox();
             this.valorunittxt = new System.Windows.Forms.TextBox();
@@ -38,7 +41,6 @@
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnInserir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.descricaocmb = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Produto = new System.Windows.Forms.TabControl();
@@ -83,24 +85,22 @@
             this.lblnomefuncionario = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ItensGridView = new System.Windows.Forms.DataGridView();
-            this.observacoestxt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnbuscavendedor = new System.Windows.Forms.Button();
             this.id_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qntd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorunit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valortotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custototal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.custounittxt = new System.Windows.Forms.TextBox();
-            this.qntdtxt = new System.Windows.Forms.NumericUpDown();
+            this.observacoestxt = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnbuscavendedor = new System.Windows.Forms.Button();
             this.tabProduto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qntdtxt)).BeginInit();
             this.Produto.SuspendLayout();
             this.tabCliente.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ItensGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qntdtxt)).BeginInit();
             this.SuspendLayout();
             // 
             // tabProduto
@@ -122,10 +122,41 @@
             this.tabProduto.Location = new System.Drawing.Point(4, 22);
             this.tabProduto.Name = "tabProduto";
             this.tabProduto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProduto.Size = new System.Drawing.Size(556, 268);
+            this.tabProduto.Size = new System.Drawing.Size(556, 80);
             this.tabProduto.TabIndex = 0;
             this.tabProduto.Text = "Produto";
             this.tabProduto.UseVisualStyleBackColor = true;
+            // 
+            // descricaocmb
+            // 
+            this.descricaocmb.FormattingEnabled = true;
+            this.descricaocmb.Location = new System.Drawing.Point(84, 18);
+            this.descricaocmb.Name = "descricaocmb";
+            this.descricaocmb.Size = new System.Drawing.Size(245, 21);
+            this.descricaocmb.TabIndex = 4;
+            // 
+            // qntdtxt
+            // 
+            this.qntdtxt.Location = new System.Drawing.Point(334, 19);
+            this.qntdtxt.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.qntdtxt.Name = "qntdtxt";
+            this.qntdtxt.Size = new System.Drawing.Size(60, 20);
+            this.qntdtxt.TabIndex = 18;
+            this.qntdtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.qntdtxt_KeyPress);
+            // 
+            // custounittxt
+            // 
+            this.custounittxt.BackColor = System.Drawing.Color.White;
+            this.custounittxt.Enabled = false;
+            this.custounittxt.ForeColor = System.Drawing.Color.Black;
+            this.custounittxt.Location = new System.Drawing.Point(88, 19);
+            this.custounittxt.Name = "custounittxt";
+            this.custounittxt.Size = new System.Drawing.Size(10, 20);
+            this.custounittxt.TabIndex = 16;
             // 
             // label4
             // 
@@ -212,14 +243,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Quantidade:";
             // 
-            // descricaocmb
-            // 
-            this.descricaocmb.FormattingEnabled = true;
-            this.descricaocmb.Location = new System.Drawing.Point(84, 18);
-            this.descricaocmb.Name = "descricaocmb";
-            this.descricaocmb.Size = new System.Drawing.Size(245, 21);
-            this.descricaocmb.TabIndex = 4;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -245,7 +268,7 @@
             this.Produto.Location = new System.Drawing.Point(0, 0);
             this.Produto.Name = "Produto";
             this.Produto.SelectedIndex = 0;
-            this.Produto.Size = new System.Drawing.Size(564, 294);
+            this.Produto.Size = new System.Drawing.Size(564, 106);
             this.Produto.TabIndex = 0;
             this.Produto.SelectedIndexChanged += new System.EventHandler(this.Produto_SelectedIndexChanged);
             // 
@@ -643,41 +666,15 @@
             this.valortotal,
             this.custototal});
             this.ItensGridView.GridColor = System.Drawing.Color.Black;
-            this.ItensGridView.Location = new System.Drawing.Point(0, 300);
+            this.ItensGridView.Location = new System.Drawing.Point(0, 112);
             this.ItensGridView.MultiSelect = false;
             this.ItensGridView.Name = "ItensGridView";
             this.ItensGridView.ReadOnly = true;
             this.ItensGridView.RowHeadersVisible = false;
             this.ItensGridView.RowHeadersWidth = 12;
             this.ItensGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ItensGridView.Size = new System.Drawing.Size(562, 256);
+            this.ItensGridView.Size = new System.Drawing.Size(562, 444);
             this.ItensGridView.TabIndex = 15;
-            // 
-            // observacoestxt
-            // 
-            this.observacoestxt.Location = new System.Drawing.Point(195, 578);
-            this.observacoestxt.Name = "observacoestxt";
-            this.observacoestxt.Size = new System.Drawing.Size(126, 20);
-            this.observacoestxt.TabIndex = 37;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(192, 562);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 13);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Observações:";
-            // 
-            // btnbuscavendedor
-            // 
-            this.btnbuscavendedor.Location = new System.Drawing.Point(72, 577);
-            this.btnbuscavendedor.Name = "btnbuscavendedor";
-            this.btnbuscavendedor.Size = new System.Drawing.Size(15, 22);
-            this.btnbuscavendedor.TabIndex = 41;
-            this.btnbuscavendedor.Text = ">";
-            this.btnbuscavendedor.UseVisualStyleBackColor = true;
-            this.btnbuscavendedor.Click += new System.EventHandler(this.btnbuscavendedor_Click);
             // 
             // id_produto
             // 
@@ -725,28 +722,31 @@
             this.custototal.ReadOnly = true;
             this.custototal.Visible = false;
             // 
-            // custounittxt
+            // observacoestxt
             // 
-            this.custounittxt.BackColor = System.Drawing.Color.White;
-            this.custounittxt.Enabled = false;
-            this.custounittxt.ForeColor = System.Drawing.Color.Black;
-            this.custounittxt.Location = new System.Drawing.Point(88, 19);
-            this.custounittxt.Name = "custounittxt";
-            this.custounittxt.Size = new System.Drawing.Size(10, 20);
-            this.custounittxt.TabIndex = 16;
+            this.observacoestxt.Location = new System.Drawing.Point(195, 578);
+            this.observacoestxt.Name = "observacoestxt";
+            this.observacoestxt.Size = new System.Drawing.Size(126, 20);
+            this.observacoestxt.TabIndex = 37;
             // 
-            // qntdtxt
+            // label7
             // 
-            this.qntdtxt.Location = new System.Drawing.Point(334, 19);
-            this.qntdtxt.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.qntdtxt.Name = "qntdtxt";
-            this.qntdtxt.Size = new System.Drawing.Size(60, 20);
-            this.qntdtxt.TabIndex = 18;
-            this.qntdtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.qntdtxt_KeyPress);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(192, 562);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 13);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Observações:";
+            // 
+            // btnbuscavendedor
+            // 
+            this.btnbuscavendedor.Location = new System.Drawing.Point(72, 577);
+            this.btnbuscavendedor.Name = "btnbuscavendedor";
+            this.btnbuscavendedor.Size = new System.Drawing.Size(15, 22);
+            this.btnbuscavendedor.TabIndex = 41;
+            this.btnbuscavendedor.Text = ">";
+            this.btnbuscavendedor.UseVisualStyleBackColor = true;
+            this.btnbuscavendedor.Click += new System.EventHandler(this.btnbuscavendedor_Click);
             // 
             // FormEfetuarVenda
             // 
@@ -770,6 +770,7 @@
             this.Load += new System.EventHandler(this.FormEfetuarVenda_Load);
             this.tabProduto.ResumeLayout(false);
             this.tabProduto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qntdtxt)).EndInit();
             this.Produto.ResumeLayout(false);
             this.tabCliente.ResumeLayout(false);
             this.tabCliente.PerformLayout();
@@ -778,7 +779,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ItensGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qntdtxt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

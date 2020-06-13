@@ -36,14 +36,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.iconLogin = new FontAwesome.Sharp.IconPictureBox();
             this.lblLogin = new System.Windows.Forms.Label();
+            this.lblacesso = new System.Windows.Forms.Label();
+            this.lblvenda = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // btncancelar
             // 
+            this.btncancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancelar.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancelar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btncancelar.Location = new System.Drawing.Point(292, 217);
             this.btncancelar.Name = "btncancelar";
@@ -55,9 +58,10 @@
             // 
             // btnOk
             // 
+            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOk.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOk.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnOk.Location = new System.Drawing.Point(12, 217);
             this.btnOk.Name = "btnOk";
@@ -82,11 +86,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(9, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 27);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "Senha:";
             // 
@@ -106,11 +110,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(9, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 27);
+            this.label1.Size = new System.Drawing.Size(52, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Login:";
             // 
@@ -130,13 +134,37 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblLogin.Location = new System.Drawing.Point(78, 32);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(218, 35);
+            this.lblLogin.Size = new System.Drawing.Size(198, 25);
             this.lblLogin.TabIndex = 13;
             this.lblLogin.Text = "Entre em sua conta";
+            // 
+            // lblacesso
+            // 
+            this.lblacesso.AutoSize = true;
+            this.lblacesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblacesso.ForeColor = System.Drawing.Color.White;
+            this.lblacesso.Location = new System.Drawing.Point(95, 41);
+            this.lblacesso.Name = "lblacesso";
+            this.lblacesso.Size = new System.Drawing.Size(10, 13);
+            this.lblacesso.TabIndex = 14;
+            this.lblacesso.Text = "-";
+            this.lblacesso.Visible = false;
+            // 
+            // lblvenda
+            // 
+            this.lblvenda.AutoSize = true;
+            this.lblvenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvenda.ForeColor = System.Drawing.Color.White;
+            this.lblvenda.Location = new System.Drawing.Point(199, 41);
+            this.lblvenda.Name = "lblvenda";
+            this.lblvenda.Size = new System.Drawing.Size(10, 13);
+            this.lblvenda.TabIndex = 15;
+            this.lblvenda.Text = "-";
+            this.lblvenda.Visible = false;
             // 
             // FormLoginUser
             // 
@@ -152,6 +180,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.logintxt);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblvenda);
+            this.Controls.Add(this.lblacesso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -172,9 +202,11 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.MaskedTextBox senhatxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox logintxt;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconLogin;
         private System.Windows.Forms.Label lblLogin;
+        public System.Windows.Forms.TextBox logintxt;
+        public System.Windows.Forms.Label lblacesso;
+        public System.Windows.Forms.Label lblvenda;
     }
 }

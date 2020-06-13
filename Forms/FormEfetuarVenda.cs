@@ -274,7 +274,7 @@ namespace WindowsFormsApp1.Forms
            
             while (linha < tlinha)
             {   
-                con.StringdeExecucao += "INSERT INTO tab_prod_vendas SET id_venda=(SELECT MAX(id_venda) FROM tabvendas), id_produto='" + ItensGridView.Rows[linha].Cells["id_produto"].Value.ToString() + "', qntd='" + ItensGridView.Rows[linha].Cells["qntd"].Value.ToString() + "', custototal='" + ItensGridView.Rows[linha].Cells["custototal"].Value.ToString() + "', valortotal='" + ItensGridView.Rows[linha].Cells["valortotal"].Value.ToString() + "';";
+                con.StringdeExecucao += "INSERT INTO tab_prod_vendas SET id_venda=(SELECT MAX(id_venda) FROM tabvendas), id_produto='" + ItensGridView.Rows[linha].Cells["id_produto"].Value.ToString() + "', qntd='" + ItensGridView.Rows[linha].Cells["qntd"].Value.ToString() + "', custototal='" + ItensGridView.Rows[linha].Cells["custototal"].Value.ToString().Replace("R$","").Replace(" ","").Replace(".", "").Replace(",", ".") + "', valortotal='" + ItensGridView.Rows[linha].Cells["valortotal"].Value.ToString().Replace("R$", "").Replace(" ", "").Replace(".", "").Replace(",",".") + "';";
                 linha++;
             }
 

@@ -212,16 +212,12 @@ namespace WindowsFormsApp1
 
         }
 
-
-        private void btnAdminLogin_Click(object sender, EventArgs e)
-        {
-           
-        }
-
+            
         private void btnAdminLogin_Click_1(object sender, EventArgs e)
         {
-            FormLoginUser formLogi = new FormLoginUser();
-            formLogi.ShowDialog();
+            Admin_Form.FormLoginUser Login = new Admin_Form.FormLoginUser();
+            Login.Show();
+            Login.lblacesso.Text = "Admin";
         }
     }
 }
