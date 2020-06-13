@@ -250,15 +250,17 @@ namespace WindowsFormsApp1.Admin_Form
 
         private void btnLerRegis_Click(object sender, EventArgs e)
         {
+
             SqlCeConnection cn = new SqlCeConnection(stringConexao());
-            if (cn.State == ConnectionState.Closed)
-            {
-                cn.Open();
-            }
-            // Monta a consulta SQL 
-            string sql = "select sobrenome, nome from " + nomeTabela;
             try
             {
+                if (cn.State == ConnectionState.Closed)
+                {
+                    cn.Open();
+                }
+                // Monta a consulta SQL 
+                string sql = "select sobrenome, nome from " + nomeTabela;
+            
                 SqlCeCommand cmd = new SqlCeCommand(sql, cn);
                 cmd.CommandType = CommandType.Text;
                 SqlCeResultSet rs = cmd.ExecuteResultSet(ResultSetOptions.Scrollable);
@@ -287,7 +289,7 @@ namespace WindowsFormsApp1.Admin_Form
             }
             catch (SqlCeException sqlexception)
             {
-                MessageBox.Show(sqlexception.Message, "Bah Tchê.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(sqlexception.Message, "Entre com um banco para acessar os registros", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
