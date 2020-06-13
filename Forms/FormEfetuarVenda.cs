@@ -68,7 +68,6 @@ namespace WindowsFormsApp1.Forms
 
             DataRowView drv = descricaocmb.SelectedItem as DataRowView;
             string nome;// = string.Empty;
-
             if (drv != null)
             {
                 nome = drv.Row["nome"] as string;

@@ -31,6 +31,7 @@
             this.VendasGridView = new System.Windows.Forms.DataGridView();
             this.btnNovaVenda = new FontAwesome.Sharp.IconButton();
             this.btnSyncVenda = new FontAwesome.Sharp.IconButton();
+            this.Detalhes = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.VendasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,13 +43,17 @@
             this.VendasGridView.AllowUserToResizeRows = false;
             this.VendasGridView.BackgroundColor = System.Drawing.Color.White;
             this.VendasGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.VendasGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Detalhes});
             this.VendasGridView.GridColor = System.Drawing.Color.Black;
             this.VendasGridView.Location = new System.Drawing.Point(25, 59);
             this.VendasGridView.MultiSelect = false;
             this.VendasGridView.Name = "VendasGridView";
+            this.VendasGridView.ReadOnly = true;
             this.VendasGridView.RowHeadersVisible = false;
             this.VendasGridView.Size = new System.Drawing.Size(834, 543);
             this.VendasGridView.TabIndex = 0;
+            this.VendasGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VendasGridView_CellContentClick);
             // 
             // btnNovaVenda
             // 
@@ -92,6 +97,15 @@
             this.btnSyncVenda.UseVisualStyleBackColor = true;
             this.btnSyncVenda.Click += new System.EventHandler(this.btnSyncVenda_Click);
             // 
+            // Detalhes
+            // 
+            this.Detalhes.HeaderText = "Detalhes";
+            this.Detalhes.Name = "Detalhes";
+            this.Detalhes.ReadOnly = true;
+            this.Detalhes.Text = "Detalhes";
+            this.Detalhes.UseColumnTextForButtonValue = true;
+            this.Detalhes.Width = 70;
+            // 
             // FormVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,5 +128,6 @@
         private System.Windows.Forms.DataGridView VendasGridView;
         private FontAwesome.Sharp.IconButton btnNovaVenda;
         private FontAwesome.Sharp.IconButton btnSyncVenda;
+        private System.Windows.Forms.DataGridViewButtonColumn Detalhes;
     }
 }
