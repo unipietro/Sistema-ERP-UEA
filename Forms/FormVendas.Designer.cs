@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.VendasGridView = new System.Windows.Forms.DataGridView();
+            this.Detalhes = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnNovaVenda = new FontAwesome.Sharp.IconButton();
             this.btnSyncVenda = new FontAwesome.Sharp.IconButton();
-            this.Detalhes = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.VendasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +41,10 @@
             this.VendasGridView.AllowUserToDeleteRows = false;
             this.VendasGridView.AllowUserToResizeColumns = false;
             this.VendasGridView.AllowUserToResizeRows = false;
-            this.VendasGridView.BackgroundColor = System.Drawing.Color.White;
+            this.VendasGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.VendasGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.VendasGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.VendasGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Detalhes});
@@ -54,6 +57,15 @@
             this.VendasGridView.Size = new System.Drawing.Size(834, 543);
             this.VendasGridView.TabIndex = 0;
             this.VendasGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VendasGridView_CellContentClick);
+            // 
+            // Detalhes
+            // 
+            this.Detalhes.HeaderText = "Detalhes";
+            this.Detalhes.Name = "Detalhes";
+            this.Detalhes.ReadOnly = true;
+            this.Detalhes.Text = "Detalhes";
+            this.Detalhes.UseColumnTextForButtonValue = true;
+            this.Detalhes.Width = 70;
             // 
             // btnNovaVenda
             // 
@@ -96,15 +108,6 @@
             this.btnSyncVenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSyncVenda.UseVisualStyleBackColor = true;
             this.btnSyncVenda.Click += new System.EventHandler(this.btnSyncVenda_Click);
-            // 
-            // Detalhes
-            // 
-            this.Detalhes.HeaderText = "Detalhes";
-            this.Detalhes.Name = "Detalhes";
-            this.Detalhes.ReadOnly = true;
-            this.Detalhes.Text = "Detalhes";
-            this.Detalhes.UseColumnTextForButtonValue = true;
-            this.Detalhes.Width = 70;
             // 
             // FormVendas
             // 

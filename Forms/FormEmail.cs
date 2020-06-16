@@ -116,5 +116,57 @@ namespace WindowsFormsApp1.Forms
             pdf.EnviarEmail(paracmb.Text, assuntotxt.Text, mensagemtxt, emailtxt.Text, senhatxt.Text, Convert.ToInt32(portatxt.Text), servidortxt.Text, Anexoslstview);
         
         }
+
+        private void btnAnexo_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Dialogo = new OpenFileDialog();
+            if (Dialogo.ShowDialog() == DialogResult.OK)
+            {
+                string extensao = Path.GetExtension(Dialogo.FileName);
+                string nomedoarquivo = Path.GetFileNameWithoutExtension(Dialogo.FileName);
+                string pasta = Path.GetDirectoryName(Dialogo.FileName);
+                string LocalExatoArquivo = pasta + "\\" + nomedoarquivo + extensao;
+
+                int numeroimagem;
+
+
+                if (extensao.ToString() == ".xml" || extensao.ToString() == ".xlsx" || extensao.ToString() == ".xlsb" || extensao.ToString() == ".xltx" || extensao.ToString() == ".xltm" || extensao.ToString() == ".xls" || extensao.ToString() == ".xlt" || extensao.ToString() == ".xml" || extensao.ToString() == ".xlam" || extensao.ToString() == ".xla" || extensao.ToString() == ".xlw" || extensao.ToString() == ".xlr") //Se for Excel
+                {
+                    numeroimagem = 2;
+                }
+                else if (extensao.ToString() == ".doc" || extensao.ToString() == ".docx" || extensao.ToString() == ".docm" || extensao.ToString() == ".dotx" || extensao.ToString() == ".dotm") //Se for WORD 
+                {
+                    numeroimagem = 4;
+                }
+                else if (extensao.ToString() == ".pdf")//Se for PDF
+                {
+                    numeroimagem = 3;
+                }
+                else //se for desconhecido
+                {
+                    numeroimagem = 0;
+                }
+
+                ListViewItem item = new ListViewItem();
+                item.Text = (nomedoarquivo).ToString();
+                item.ImageIndex = numeroimagem;
+                item.SubItems.Add(LocalExatoArquivo).ToString();
+
+                Anexoslstview.Items.Add(item);
+
+            }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Anexoslstview.SelectedItems[0].Remove();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao remover o anexo selecionado, por favor, selecione-o e tente novamente.");
+            }
+        }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.FuncionariosGridView = new System.Windows.Forms.DataGridView();
-            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnSave = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.FuncionariosGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,7 +37,10 @@
             // 
             this.FuncionariosGridView.AllowUserToResizeColumns = false;
             this.FuncionariosGridView.AllowUserToResizeRows = false;
-            this.FuncionariosGridView.BackgroundColor = System.Drawing.Color.White;
+            this.FuncionariosGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FuncionariosGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.FuncionariosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FuncionariosGridView.GridColor = System.Drawing.Color.Black;
             this.FuncionariosGridView.Location = new System.Drawing.Point(22, 63);
@@ -46,15 +49,25 @@
             this.FuncionariosGridView.Size = new System.Drawing.Size(839, 520);
             this.FuncionariosGridView.TabIndex = 0;
             // 
-            // btnSalvar
+            // btnSave
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(22, 13);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(158, 44);
-            this.btnSalvar.TabIndex = 2;
-            this.btnSalvar.Text = "Salvar Alterações";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSave.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btnSave.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.IconSize = 22;
+            this.btnSave.Location = new System.Drawing.Point(22, 16);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Rotation = 0D;
+            this.btnSave.Size = new System.Drawing.Size(164, 41);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Salvar Alterações";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormVendedores
             // 
@@ -62,7 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
-            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.FuncionariosGridView);
             this.Name = "FormVendedores";
             this.Text = "Form1";
@@ -75,6 +88,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView FuncionariosGridView;
-        private System.Windows.Forms.Button btnSalvar;
+        private FontAwesome.Sharp.IconButton btnSave;
     }
 }

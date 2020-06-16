@@ -35,7 +35,6 @@ namespace WindowsFormsApp1
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdminLogin = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
-            this.btnFinancas = new FontAwesome.Sharp.IconButton();
             this.btnVendedores = new FontAwesome.Sharp.IconButton();
             this.btnVendas = new FontAwesome.Sharp.IconButton();
             this.btnStorage = new FontAwesome.Sharp.IconButton();
@@ -57,7 +56,6 @@ namespace WindowsFormsApp1
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.btnAdminLogin);
             this.panel1.Controls.Add(this.btnClientes);
-            this.panel1.Controls.Add(this.btnFinancas);
             this.panel1.Controls.Add(this.btnVendedores);
             this.panel1.Controls.Add(this.btnVendas);
             this.panel1.Controls.Add(this.btnStorage);
@@ -103,7 +101,7 @@ namespace WindowsFormsApp1
             this.btnClientes.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnClientes.IconSize = 32;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 370);
+            this.btnClientes.Location = new System.Drawing.Point(0, 329);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnClientes.Rotation = 0D;
@@ -114,29 +112,6 @@ namespace WindowsFormsApp1
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // btnFinancas
-            // 
-            this.btnFinancas.FlatAppearance.BorderSize = 0;
-            this.btnFinancas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinancas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnFinancas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinancas.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFinancas.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.btnFinancas.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFinancas.IconSize = 32;
-            this.btnFinancas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinancas.Location = new System.Drawing.Point(-2, 329);
-            this.btnFinancas.Name = "btnFinancas";
-            this.btnFinancas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnFinancas.Rotation = 0D;
-            this.btnFinancas.Size = new System.Drawing.Size(235, 36);
-            this.btnFinancas.TabIndex = 12;
-            this.btnFinancas.Text = "FINANÇAS";
-            this.btnFinancas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinancas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFinancas.UseVisualStyleBackColor = true;
-            this.btnFinancas.Click += new System.EventHandler(this.btnFinancas_Click);
             // 
             // btnVendedores
             // 
@@ -339,7 +314,6 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button7;
-        private FontAwesome.Sharp.IconButton btnFinancas;
         private FontAwesome.Sharp.IconButton btnVendedores;
         private FontAwesome.Sharp.IconButton btnVendas;
         private FontAwesome.Sharp.IconButton btnStorage;

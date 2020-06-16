@@ -165,12 +165,6 @@
     <Compile Include="Forms\FormEstoque.Designer.cs">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormFinancas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormFinancas.Designer.cs">
-      <DependentUpon>FormFinancas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,9 +199,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormFinancas.resx">
-      <DependentUpon>FormFinancas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVendas.resx">
       <DependentUpon>FormVendas.cs</DependentUpon>

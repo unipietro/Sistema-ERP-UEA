@@ -56,13 +56,13 @@ namespace WindowsFormsApp1.Forms
             this.chartVendas.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartVendas.Legends.Add(legend1);
-            this.chartVendas.Location = new System.Drawing.Point(25, 25);
+            this.chartVendas.Location = new System.Drawing.Point(12, 25);
             this.chartVendas.Name = "chartVendas";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Vendas";
             this.chartVendas.Series.Add(series1);
-            this.chartVendas.Size = new System.Drawing.Size(415, 353);
+            this.chartVendas.Size = new System.Drawing.Size(428, 353);
             this.chartVendas.TabIndex = 0;
             this.chartVendas.Text = "chart1";
             // 
@@ -71,6 +71,8 @@ namespace WindowsFormsApp1.Forms
             this.chartProdutos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
             chartArea2.Name = "ChartArea1";
             this.chartProdutos.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
@@ -80,6 +82,7 @@ namespace WindowsFormsApp1.Forms
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series2.Legend = "Legend1";
+            series2.MarkerBorderColor = System.Drawing.Color.Transparent;
             series2.Name = "TopProdutos";
             this.chartProdutos.Series.Add(series2);
             this.chartProdutos.Size = new System.Drawing.Size(403, 353);

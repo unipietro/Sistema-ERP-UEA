@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmail));
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnRemove = new FontAwesome.Sharp.IconButton();
+            this.btnAnexo = new FontAwesome.Sharp.IconButton();
             this.paracmb = new System.Windows.Forms.TextBox();
             this.mensagemtxt = new System.Windows.Forms.RichTextBox();
             this.lblnomeidoso = new System.Windows.Forms.Label();
-            this.btnremoveranexo = new System.Windows.Forms.Button();
             this.Anexoslstview = new System.Windows.Forms.ListView();
             this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,7 +51,6 @@
             this.listemail = new System.Windows.Forms.ListBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.btnatualizar = new System.Windows.Forms.Button();
-            this.btnanexar = new System.Windows.Forms.Button();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.emailtxt = new System.Windows.Forms.TextBox();
             this.Label25 = new System.Windows.Forms.Label();
@@ -63,10 +63,11 @@
             // 
             // GroupBox2
             // 
+            this.GroupBox2.Controls.Add(this.btnRemove);
+            this.GroupBox2.Controls.Add(this.btnAnexo);
             this.GroupBox2.Controls.Add(this.paracmb);
             this.GroupBox2.Controls.Add(this.mensagemtxt);
             this.GroupBox2.Controls.Add(this.lblnomeidoso);
-            this.GroupBox2.Controls.Add(this.btnremoveranexo);
             this.GroupBox2.Controls.Add(this.Anexoslstview);
             this.GroupBox2.Controls.Add(this.Label1);
             this.GroupBox2.Controls.Add(this.Label2);
@@ -77,13 +78,47 @@
             this.GroupBox2.Controls.Add(this.listemail);
             this.GroupBox2.Controls.Add(this.Label4);
             this.GroupBox2.Controls.Add(this.btnatualizar);
-            this.GroupBox2.Controls.Add(this.btnanexar);
+            this.GroupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.GroupBox2.Location = new System.Drawing.Point(12, 81);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(693, 450);
             this.GroupBox2.TabIndex = 290;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "Dados para E-Mail:";
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnRemove.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnRemove.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRemove.IconSize = 22;
+            this.btnRemove.Location = new System.Drawing.Point(595, 150);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Rotation = 0D;
+            this.btnRemove.Size = new System.Drawing.Size(88, 37);
+            this.btnRemove.TabIndex = 294;
+            this.btnRemove.Text = "Remover arquivo";
+            this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // btnAnexo
+            // 
+            this.btnAnexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnexo.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAnexo.IconChar = FontAwesome.Sharp.IconChar.Paperclip;
+            this.btnAnexo.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAnexo.IconSize = 21;
+            this.btnAnexo.Location = new System.Drawing.Point(594, 107);
+            this.btnAnexo.Name = "btnAnexo";
+            this.btnAnexo.Rotation = 0D;
+            this.btnAnexo.Size = new System.Drawing.Size(90, 37);
+            this.btnAnexo.TabIndex = 293;
+            this.btnAnexo.Text = "Anexar Arquivo";
+            this.btnAnexo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnexo.UseVisualStyleBackColor = true;
+            this.btnAnexo.Click += new System.EventHandler(this.btnAnexo_Click);
             // 
             // paracmb
             // 
@@ -109,16 +144,6 @@
             this.lblnomeidoso.Size = new System.Drawing.Size(0, 13);
             this.lblnomeidoso.TabIndex = 286;
             this.lblnomeidoso.Visible = false;
-            // 
-            // btnremoveranexo
-            // 
-            this.btnremoveranexo.Location = new System.Drawing.Point(593, 150);
-            this.btnremoveranexo.Name = "btnremoveranexo";
-            this.btnremoveranexo.Size = new System.Drawing.Size(92, 37);
-            this.btnremoveranexo.TabIndex = 7;
-            this.btnremoveranexo.Text = "Remover Anexo";
-            this.btnremoveranexo.UseVisualStyleBackColor = true;
-            this.btnremoveranexo.Click += new System.EventHandler(this.btnremoveranexo_Click);
             // 
             // Anexoslstview
             // 
@@ -224,22 +249,13 @@
             this.btnatualizar.Text = "Atualizar";
             this.btnatualizar.UseVisualStyleBackColor = true;
             // 
-            // btnanexar
-            // 
-            this.btnanexar.Location = new System.Drawing.Point(593, 106);
-            this.btnanexar.Name = "btnanexar";
-            this.btnanexar.Size = new System.Drawing.Size(92, 37);
-            this.btnanexar.TabIndex = 6;
-            this.btnanexar.Text = "Anexar Arquivo";
-            this.btnanexar.UseVisualStyleBackColor = true;
-            this.btnanexar.Click += new System.EventHandler(this.btnanexar_Click);
-            // 
             // GroupBox1
             // 
             this.GroupBox1.Controls.Add(this.emailtxt);
             this.GroupBox1.Controls.Add(this.Label25);
             this.GroupBox1.Controls.Add(this.Label24);
             this.GroupBox1.Controls.Add(this.senhatxt);
+            this.GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.GroupBox1.Location = new System.Drawing.Point(12, 12);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(693, 67);
@@ -283,6 +299,9 @@
             // 
             // btnenviar
             // 
+            this.btnenviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnenviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnenviar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnenviar.Location = new System.Drawing.Point(615, 537);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(90, 36);
@@ -295,6 +314,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(716, 579);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
@@ -314,7 +334,6 @@
         internal System.Windows.Forms.GroupBox GroupBox2;
         private System.Windows.Forms.RichTextBox mensagemtxt;
         internal System.Windows.Forms.Label lblnomeidoso;
-        internal System.Windows.Forms.Button btnremoveranexo;
         internal System.Windows.Forms.ListView Anexoslstview;
         internal System.Windows.Forms.ColumnHeader ColumnHeader1;
         internal System.Windows.Forms.ColumnHeader ColumnHeader2;
@@ -329,7 +348,6 @@
         internal System.Windows.Forms.ListBox listemail;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Button btnatualizar;
-        internal System.Windows.Forms.Button btnanexar;
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.TextBox emailtxt;
         internal System.Windows.Forms.Label Label25;
@@ -338,5 +356,7 @@
         internal System.Windows.Forms.Button btnenviar;
         internal System.Windows.Forms.TextBox paracmb;
         internal System.Windows.Forms.ImageList ImageList1;
+        private FontAwesome.Sharp.IconButton btnAnexo;
+        private FontAwesome.Sharp.IconButton btnRemove;
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ProdutosGridView = new System.Windows.Forms.DataGridView();
-            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnSave = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.ProdutosGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,7 +37,10 @@
             // 
             this.ProdutosGridView.AllowUserToResizeColumns = false;
             this.ProdutosGridView.AllowUserToResizeRows = false;
-            this.ProdutosGridView.BackgroundColor = System.Drawing.Color.White;
+            this.ProdutosGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ProdutosGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.ProdutosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProdutosGridView.GridColor = System.Drawing.Color.Black;
             this.ProdutosGridView.Location = new System.Drawing.Point(22, 62);
@@ -48,15 +51,25 @@
             this.ProdutosGridView.TabIndex = 0;
             this.ProdutosGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdutosGridView_CellContentClick);
             // 
-            // btnSalvar
+            // btnSave
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(22, 12);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(158, 44);
-            this.btnSalvar.TabIndex = 1;
-            this.btnSalvar.Text = "Salvar Alterações";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSave.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnSave.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.IconSize = 23;
+            this.btnSave.Location = new System.Drawing.Point(22, 12);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Rotation = 0D;
+            this.btnSave.Size = new System.Drawing.Size(156, 42);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Salvar Alterações";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormEstoque
             // 
@@ -64,7 +77,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
-            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.ProdutosGridView);
             this.Name = "FormEstoque";
             this.Text = "Form3";
@@ -77,6 +90,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView ProdutosGridView;
-        private System.Windows.Forms.Button btnSalvar;
+        private FontAwesome.Sharp.IconButton btnSave;
     }
 }
