@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1.Forms
 {
+    //atualização form responsivo com banco de dados
     public partial class FormDashboard : Form
     {
         private MySqlDataAdapter da = new MySqlDataAdapter();
