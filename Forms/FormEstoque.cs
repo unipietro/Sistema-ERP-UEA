@@ -64,5 +64,18 @@ namespace WindowsFormsApp1.Forms
         {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                da.Update((DataTable)bindingSource.DataSource);
+                MessageBox.Show("As alterações foram salvas com sucesso.");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Desculpe, mas ocorreu um erro ao salvar os dados no banco de dados.");
+            }
+        }
     }
 }

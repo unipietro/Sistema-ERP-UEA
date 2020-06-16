@@ -653,7 +653,7 @@
             this.btnEmail.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEmail.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btnEmail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
             this.btnEmail.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnEmail.IconSize = 25;
             this.btnEmail.Location = new System.Drawing.Point(378, 12);
@@ -673,7 +673,7 @@
             this.btnPdf.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnPdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPdf.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPdf.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btnPdf.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btnPdf.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnPdf.IconSize = 25;
             this.btnPdf.Location = new System.Drawing.Point(200, 12);
@@ -693,7 +693,7 @@
             this.btncCancelarVenda.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btncCancelarVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncCancelarVenda.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btncCancelarVenda.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btncCancelarVenda.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.btncCancelarVenda.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btncCancelarVenda.IconSize = 25;
             this.btncCancelarVenda.Location = new System.Drawing.Point(22, 12);
