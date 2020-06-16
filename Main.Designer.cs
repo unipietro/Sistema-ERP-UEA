@@ -72,7 +72,7 @@ namespace WindowsFormsApp1
             // 
             // btnAdminLogin
             // 
-            this.btnAdminLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdminLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdminLogin.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnAdminLogin.FlatAppearance.BorderSize = 0;
             this.btnAdminLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
