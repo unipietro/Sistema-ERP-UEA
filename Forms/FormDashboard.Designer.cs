@@ -39,62 +39,78 @@ namespace WindowsFormsApp1.Forms
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.chartVendas = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartProdutos = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartCustoxVendas = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartVendas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProdutos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCustoxVendas)).BeginInit();
             this.SuspendLayout();
             // 
-            // chart1
+            // chartVendas
             // 
+            this.chartVendas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartVendas.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(25, 25);
-            this.chart1.Name = "chart1";
+            this.chartVendas.Legends.Add(legend1);
+            this.chartVendas.Location = new System.Drawing.Point(25, 25);
+            this.chartVendas.Name = "chartVendas";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(340, 353);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            series1.Name = "Vendas";
+            this.chartVendas.Series.Add(series1);
+            this.chartVendas.Size = new System.Drawing.Size(415, 353);
+            this.chartVendas.TabIndex = 0;
+            this.chartVendas.Text = "chart1";
             // 
-            // chart2
+            // chartProdutos
             // 
+            this.chartProdutos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
+            this.chartProdutos.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(371, 25);
-            this.chart2.Name = "chart2";
+            this.chartProdutos.Legends.Add(legend2);
+            this.chartProdutos.Location = new System.Drawing.Point(457, 25);
+            this.chartProdutos.Name = "chartProdutos";
             series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(489, 353);
-            this.chart2.TabIndex = 1;
-            this.chart2.Text = "chart2";
+            series2.Name = "TopProdutos";
+            this.chartProdutos.Series.Add(series2);
+            this.chartProdutos.Size = new System.Drawing.Size(403, 353);
+            this.chartProdutos.TabIndex = 1;
+            this.chartProdutos.Text = "chart2";
             // 
-            // chart3
+            // chartCustoxVendas
             // 
+            this.chartCustoxVendas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
+            this.chartCustoxVendas.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(12, 396);
-            this.chart3.Name = "chart3";
+            this.chartCustoxVendas.Legends.Add(legend3);
+            this.chartCustoxVendas.Location = new System.Drawing.Point(12, 396);
+            this.chartCustoxVendas.Name = "chartCustoxVendas";
+            series3.BorderWidth = 5;
             series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart3.Series.Add(series3);
-            this.chart3.Size = new System.Drawing.Size(848, 196);
-            this.chart3.TabIndex = 2;
-            this.chart3.Text = "chart3";
+            series3.Name = "Vendas";
+            series4.BorderWidth = 5;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Custo";
+            this.chartCustoxVendas.Series.Add(series3);
+            this.chartCustoxVendas.Series.Add(series4);
+            this.chartCustoxVendas.Size = new System.Drawing.Size(848, 196);
+            this.chartCustoxVendas.TabIndex = 2;
+            this.chartCustoxVendas.Text = "chart3";
             // 
             // FormDashboard
             // 
@@ -102,33 +118,26 @@ namespace WindowsFormsApp1.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(882, 614);
-            this.Controls.Add(this.chart3);
-            this.Controls.Add(this.chart2);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartCustoxVendas);
+            this.Controls.Add(this.chartProdutos);
+            this.Controls.Add(this.chartVendas);
             this.Name = "FormDashboard";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormDashboard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartVendas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProdutos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCustoxVendas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
-        private void FormDashboard_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+      
+       
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartVendas;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartProdutos;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartCustoxVendas;
     }
 }
