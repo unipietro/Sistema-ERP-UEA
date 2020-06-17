@@ -141,7 +141,6 @@ namespace WindowsFormsApp1
                 Fone = dw["telefone"].ToString();
                 Celular = dw["celular"].ToString();
                 Endereco = dw["Endereco"].ToString();
-
             }
 
             int TamanhoFonte = 12;

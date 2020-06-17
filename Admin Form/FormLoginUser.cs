@@ -15,6 +15,7 @@ namespace WindowsFormsApp1.Admin_Form
         public FormLoginUser()
         {
             InitializeComponent();
+
         }
 
         private void btnOk_Click(object sender, EventArgs e)
